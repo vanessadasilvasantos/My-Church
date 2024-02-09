@@ -15,7 +15,7 @@ export default function Login() {
       <Title text="Login" />
       <Input label="Email" />
       <Input label="Senha" />
-      <Button text="Continuar" />
+      <Button text="Continuar" onPress="Home" />
       <Text>Esqueci minha senha</Text>
     </View>
   );

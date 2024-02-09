@@ -6,6 +6,8 @@ import Login from "./src/screens/login";
 import Input from "./src/components/input";
 import Button from "./src/components/button";
 import Title from "./src/components/title";
+import Home from "./src/screens/home";
+import Header from "./src/components/header";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: "",
+            headerTransparent: true,
+          }}
+        />
         <Stack.Screen
           name="Login"
           component={Login}
@@ -40,6 +50,14 @@ export default function App() {
         <Stack.Screen
           name="Title"
           component={Title}
+          options={{
+            title: "",
+            headerTransparent: true,
+          }}
+        />
+        <Stack.Screen
+          name="Header"
+          component={Header}
           options={{
             title: "",
             headerTransparent: true,
